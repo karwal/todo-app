@@ -1,0 +1,3 @@
+travis env set GITHUB_TOKEN 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
+travis login --pro --github-token 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
+npm install --save axios vee-validate vue-material  vuedraggable
