@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/Cellar/node@12/12.16.3/bin/node',
+1 verbose cli   '/usr/local/opt/node@12/bin/npm',
+1 verbose cli   'start'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v12.16.3
+4 verbose stack Error: missing script: start
+4 verbose stack     at run (/usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/lib/run-script.js:155:19)
+4 verbose stack     at /usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/lib/run-script.js:63:5
+4 verbose stack     at /usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/read-package-json/read-json.js:116:5
+4 verbose stack     at /usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/read-package-json/read-json.js:436:5
+4 verbose stack     at checkBinReferences_ (/usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/read-package-json/read-json.js:391:45)
+4 verbose stack     at final (/usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/read-package-json/read-json.js:434:3)
+4 verbose stack     at then (/usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/read-package-json/read-json.js:161:5)
+4 verbose stack     at /usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/read-package-json/read-json.js:382:12
+4 verbose stack     at /usr/local/Cellar/node@12/12.16.3/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:115:16
+4 verbose stack     at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:63:3)
+5 verbose cwd /Users/jagdeep/projects/vue/todo-app
+6 verbose Darwin 20.5.0
+7 verbose argv "/usr/local/Cellar/node@12/12.16.3/bin/node" "/usr/local/opt/node@12/bin/npm" "start"
+8 verbose node v12.16.3
+9 verbose npm  v6.14.4
+10 error missing script: start
+11 verbose exit [ 1, true ]
