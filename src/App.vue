@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <md-toolbar>
+      <md-button class="md-icon-button" @click="showNavigation = true">
+        <md-icon>menu</md-icon>
+      </md-button>
+      <h3 class="md-title">Todo App</h3>
+    </md-toolbar>
+    <md-drawer :md-active.sync="showNavigation" md-swipeable>
+      <md-toolbar class="md-transparent" md-elevation="0">
+        <span class="md-title">Todo App</span>
+      </md-toolbar>
+<md-list>
+        <md-list-item>
+          <router-link to="/">
+            <span class="md-list-item-text">Home</span>
+          </router-link>
+        </md-list-item>
+      </md-list>
+    </md-drawer>
+    <router-view />
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "app",
+  data: () => {
+    return {
+      showNavigation: false
+    };
   }
-}
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.center {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+form {
+  width: 95vw;
+  margin: 0 auto;
+}
+.md-toolbar.md-theme-default {
+  background: #009688 !important;
+  height: 60px;
+}
+.md-title,
+.md-toolbar.md-theme-default .md-icon {
+  color: #fff !important;
 }
 </style>
